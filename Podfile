@@ -8,7 +8,6 @@ target 'SpringOvertrue' do
     pod 'JSONModel', '1.7.0'
     pod 'SDWebImage', '4.4.3'
     pod 'KVOController', '1.2.0'
-    pod 'WechatOpenSDK', '1.8.7.1'
     pod 'FSCalendar', '2.8.0'
     pod 'MBProgressHUD', '1.1.0'
     pod 'AliyunOSSiOS', '2.10.7'
@@ -20,6 +19,7 @@ target 'SpringOvertrue' do
     pod 'SPPageMenu', '3.5.0'
     pod 'LookinServer', '1.0.0', :configurations => ['Debug'] # lookin UI debug
     pod 'IGListKit', '~> 4.0.0'
+    pod 'SOLoginModule', :path => './Lib/SOLoginModule'
     # firebase
     # pod 'Firebase/Crashlytics', '7.7.0'
     # pod 'Firebase/Analytics', '7.7.0'

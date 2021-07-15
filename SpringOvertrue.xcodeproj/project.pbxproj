@@ -12,6 +12,10 @@
 		967A7565269F270E000B762B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967A7564269F270E000B762B /* Assets.xcassets */; };
 		967A7568269F270E000B762B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7566269F270E000B762B /* LaunchScreen.storyboard */; };
 		967A756B269F270E000B762B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967A756A269F270E000B762B /* main.m */; };
+		968142CC26A07C8400207460 /* LaunchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142CB26A07C8400207460 /* LaunchTask.m */; };
+		968142CF26A07C9800207460 /* LaunchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142CE26A07C9800207460 /* LaunchManager.m */; };
+		968142D326A0A1BA00207460 /* LaunchWxSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142D226A0A1BA00207460 /* LaunchWxSDK.m */; };
+		968142D626A0A1DC00207460 /* LaunchRootVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142D526A0A1DC00207460 /* LaunchRootVc.m */; };
 		96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7AA269F408100024350 /* SOAppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,15 @@
 		967A7567269F270E000B762B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		967A7569269F270E000B762B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967A756A269F270E000B762B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		968142CA26A07C8400207460 /* LaunchTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchTask.h; sourceTree = "<group>"; };
+		968142CB26A07C8400207460 /* LaunchTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchTask.m; sourceTree = "<group>"; };
+		968142CD26A07C9800207460 /* LaunchManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchManager.h; sourceTree = "<group>"; };
+		968142CE26A07C9800207460 /* LaunchManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchManager.m; sourceTree = "<group>"; };
+		968142D026A07CF100207460 /* LaunchManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchManagerProtocol.h; sourceTree = "<group>"; };
+		968142D126A0A1BA00207460 /* LaunchWxSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchWxSDK.h; sourceTree = "<group>"; };
+		968142D226A0A1BA00207460 /* LaunchWxSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWxSDK.m; sourceTree = "<group>"; };
+		968142D426A0A1DC00207460 /* LaunchRootVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchRootVc.h; sourceTree = "<group>"; };
+		968142D526A0A1DC00207460 /* LaunchRootVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchRootVc.m; sourceTree = "<group>"; };
 		96A2F7A9269F408100024350 /* SOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
 		96A2F7AA269F408100024350 /* SOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
 		CF5EA8A67C3236AC66BA5931 /* Pods-SpringOvertrue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringOvertrue.debug.xcconfig"; path = "Target Support Files/Pods-SpringOvertrue/Pods-SpringOvertrue.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,9 +97,26 @@
 			path = SpringOvertrue;
 			sourceTree = "<group>";
 		};
+		968142C926A07C1E00207460 /* LaunchTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				968142D026A07CF100207460 /* LaunchManagerProtocol.h */,
+				968142CA26A07C8400207460 /* LaunchTask.h */,
+				968142CB26A07C8400207460 /* LaunchTask.m */,
+				968142CD26A07C9800207460 /* LaunchManager.h */,
+				968142CE26A07C9800207460 /* LaunchManager.m */,
+				968142D126A0A1BA00207460 /* LaunchWxSDK.h */,
+				968142D226A0A1BA00207460 /* LaunchWxSDK.m */,
+				968142D426A0A1DC00207460 /* LaunchRootVc.h */,
+				968142D526A0A1DC00207460 /* LaunchRootVc.m */,
+			);
+			path = LaunchTaskManager;
+			sourceTree = "<group>";
+		};
 		96A2F7AC269F410600024350 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				968142C926A07C1E00207460 /* LaunchTaskManager */,
 				96A2F7A9269F408100024350 /* SOAppDelegate.h */,
 				96A2F7AA269F408100024350 /* SOAppDelegate.m */,
 				967A7561269F270C000B762B /* Main.storyboard */,
@@ -211,8 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968142CF26A07C9800207460 /* LaunchManager.m in Sources */,
+				968142CC26A07C8400207460 /* LaunchTask.m in Sources */,
 				96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */,
+				968142D626A0A1DC00207460 /* LaunchRootVc.m in Sources */,
 				967A756B269F270E000B762B /* main.m in Sources */,
+				968142D326A0A1BA00207460 /* LaunchWxSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,12 +6,16 @@
 //
 
 #import "SOAppDelegate.h"
-
+#import "LaunchManager.h"
 @implementation SOAppDelegate
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey,id> *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window makeKeyAndVisible];
-    
+    [self launchTask];
     return YES;
 }
+
+- (void)launchTask {
+    [[LaunchManager defaultManager] runLaunchTasks];
+}
+
 @end
