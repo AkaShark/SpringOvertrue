@@ -16,6 +16,11 @@
 		968142CF26A07C9800207460 /* LaunchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142CE26A07C9800207460 /* LaunchManager.m */; };
 		968142D326A0A1BA00207460 /* LaunchWxSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142D226A0A1BA00207460 /* LaunchWxSDK.m */; };
 		968142D626A0A1DC00207460 /* LaunchRootVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142D526A0A1DC00207460 /* LaunchRootVc.m */; };
+		968142DE26A1B87C00207460 /* SOUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142DD26A1B87C00207460 /* SOUIUtils.m */; };
+		968142DF26A1BEFC00207460 /* SOUIUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 968142DC26A1B87C00207460 /* SOUIUtils.h */; };
+		968142E426A1C9D500207460 /* UIView+SOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142E326A1C9D500207460 /* UIView+SOUtil.m */; };
+		968142E726A1D20400207460 /* UIView+SOLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142E626A1D20400207460 /* UIView+SOLayout.m */; };
+		968142EB26A1DF9E00207460 /* SOBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142EA26A1DF9E00207460 /* SOBaseModel.m */; };
 		96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7AA269F408100024350 /* SOAppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,15 @@
 		968142D226A0A1BA00207460 /* LaunchWxSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWxSDK.m; sourceTree = "<group>"; };
 		968142D426A0A1DC00207460 /* LaunchRootVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchRootVc.h; sourceTree = "<group>"; };
 		968142D526A0A1DC00207460 /* LaunchRootVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchRootVc.m; sourceTree = "<group>"; };
+		968142DC26A1B87C00207460 /* SOUIUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = SOUIUtils.h; sourceTree = "<group>"; };
+		968142DD26A1B87C00207460 /* SOUIUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOUIUtils.m; sourceTree = "<group>"; };
+		968142E026A1C1EB00207460 /* SOPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOPrefixHeader.pch; sourceTree = "<group>"; };
+		968142E226A1C9D500207460 /* UIView+SOUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SOUtil.h"; sourceTree = "<group>"; };
+		968142E326A1C9D500207460 /* UIView+SOUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOUtil.m"; sourceTree = "<group>"; };
+		968142E526A1D20400207460 /* UIView+SOLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SOLayout.h"; sourceTree = "<group>"; };
+		968142E626A1D20400207460 /* UIView+SOLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOLayout.m"; sourceTree = "<group>"; };
+		968142E926A1DF9E00207460 /* SOBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOBaseModel.h; sourceTree = "<group>"; };
+		968142EA26A1DF9E00207460 /* SOBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOBaseModel.m; sourceTree = "<group>"; };
 		96A2F7A9269F408100024350 /* SOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
 		96A2F7AA269F408100024350 /* SOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
 		CF5EA8A67C3236AC66BA5931 /* Pods-SpringOvertrue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringOvertrue.debug.xcconfig"; path = "Target Support Files/Pods-SpringOvertrue/Pods-SpringOvertrue.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 		967A7557269F270C000B762B /* SpringOvertrue */ = {
 			isa = PBXGroup;
 			children = (
+				968142E126A1C9B100207460 /* Category */,
 				96A2F7AC269F410600024350 /* App */,
 			);
 			path = SpringOvertrue;
@@ -113,9 +128,57 @@
 			path = LaunchTaskManager;
 			sourceTree = "<group>";
 		};
+		968142DB26A1B81900207460 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				968142ED26A1F41700207460 /* Network */,
+				968142EC26A1F40600207460 /* UI */,
+				968142E826A1DF8A00207460 /* Model */,
+				968142E026A1C1EB00207460 /* SOPrefixHeader.pch */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		968142E126A1C9B100207460 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				968142E226A1C9D500207460 /* UIView+SOUtil.h */,
+				968142E326A1C9D500207460 /* UIView+SOUtil.m */,
+				968142E526A1D20400207460 /* UIView+SOLayout.h */,
+				968142E626A1D20400207460 /* UIView+SOLayout.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		968142E826A1DF8A00207460 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				968142E926A1DF9E00207460 /* SOBaseModel.h */,
+				968142EA26A1DF9E00207460 /* SOBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		968142EC26A1F40600207460 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				968142DC26A1B87C00207460 /* SOUIUtils.h */,
+				968142DD26A1B87C00207460 /* SOUIUtils.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		968142ED26A1F41700207460 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		96A2F7AC269F410600024350 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				968142DB26A1B81900207460 /* Utils */,
 				968142C926A07C1E00207460 /* LaunchTaskManager */,
 				96A2F7A9269F408100024350 /* SOAppDelegate.h */,
 				96A2F7AA269F408100024350 /* SOAppDelegate.m */,
@@ -243,9 +306,14 @@
 			files = (
 				968142CF26A07C9800207460 /* LaunchManager.m in Sources */,
 				968142CC26A07C8400207460 /* LaunchTask.m in Sources */,
+				968142DF26A1BEFC00207460 /* SOUIUtils.h in Sources */,
 				96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */,
+				968142E726A1D20400207460 /* UIView+SOLayout.m in Sources */,
 				968142D626A0A1DC00207460 /* LaunchRootVc.m in Sources */,
+				968142DE26A1B87C00207460 /* SOUIUtils.m in Sources */,
+				968142E426A1C9D500207460 /* UIView+SOUtil.m in Sources */,
 				967A756B269F270E000B762B /* main.m in Sources */,
+				968142EB26A1DF9E00207460 /* SOBaseModel.m in Sources */,
 				968142D326A0A1BA00207460 /* LaunchWxSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -392,6 +460,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9T65B34B3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SpringOvertrue/App/Utils/SOPrefixHeader.pch";
 				INFOPLIST_FILE = SpringOvertrue/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,6 +480,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9T65B34B3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SpringOvertrue/App/Utils/SOPrefixHeader.pch";
 				INFOPLIST_FILE = SpringOvertrue/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
