@@ -8,8 +8,11 @@
 #import "LaunchWxSDK.h"
 #import "LaunchManager.h"
 #import <SOWXApiManager.h>
+static  NSString *kAppWXSDK = @"";
+static  NSString *kAppWXUniversalLink = @"";
 
 @implementation LaunchWxSDK
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -23,11 +26,11 @@
 }
 
 - (SOLaunchTaskPriority)taskProiority {
-    return SOLaunchTaskPriorityNormal;
+    return SOLaunchTaskPriorityVeryHigh;
 }
 
 - (void)run {
-    [[SOWXApiManager defaultManager] setupWXSDKWithApp:@"" universalLink:@""];
+    [[SOWXApiManager defaultManager] setupWXSDKWithApp:kAppWXSDK universalLink:kAppWXUniversalLink];
     
 }
 

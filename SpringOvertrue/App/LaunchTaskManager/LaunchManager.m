@@ -31,6 +31,7 @@ static LaunchManager *_managerInstance = nil;
     }
     return self;
 }
+
 // 执行所有任务
 - (void)runLaunchTasks {
     
