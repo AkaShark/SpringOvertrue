@@ -19,10 +19,13 @@ target 'SpringOvertrue' do
     pod 'SPPageMenu', '3.5.0'
     pod 'LookinServer', '1.0.0', :configurations => ['Debug'] # lookin UI debug
     pod 'IGListKit', '~> 4.0.0'
-    pod 'SOLoginModule', :path => './Lib/SOLoginModule'
     # firebase
     # pod 'Firebase/Crashlytics', '7.7.0'
     # pod 'Firebase/Analytics', '7.7.0'
     pod 'MGJRouter', '0.10.0'
+    
+    ## 本地DevPod
+    pod 'SOLoginModule', :path => './Lib/SOLoginModule'
+    pod 'SOUtiles', :path => './Lib/SOUtiles'
 
 end

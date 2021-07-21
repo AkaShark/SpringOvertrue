@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F93F0CF490634388703E583 /* Pods_SpringOvertrue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E81618896ED91C10B1650 /* Pods_SpringOvertrue.framework */; };
+		96619BD126A86B6800EA0F3B /* SOLoginModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96619BD026A86B6800EA0F3B /* SOLoginModule.framework */; };
 		967A7563269F270C000B762B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7561269F270C000B762B /* Main.storyboard */; };
 		967A7565269F270E000B762B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967A7564269F270E000B762B /* Assets.xcassets */; };
 		967A7568269F270E000B762B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7566269F270E000B762B /* LaunchScreen.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		494E81618896ED91C10B1650 /* Pods_SpringOvertrue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringOvertrue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96619BD026A86B6800EA0F3B /* SOLoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SOLoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		967A7555269F270C000B762B /* SpringOvertrue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringOvertrue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967A7562269F270C000B762B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		967A7564269F270E000B762B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96619BD126A86B6800EA0F3B /* SOLoginModule.framework in Frameworks */,
 				1F93F0CF490634388703E583 /* Pods_SpringOvertrue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +83,7 @@
 		787EC3D5FEA3E171F4E4B540 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96619BD026A86B6800EA0F3B /* SOLoginModule.framework */,
 				494E81618896ED91C10B1650 /* Pods_SpringOvertrue.framework */,
 			);
 			name = Frameworks;
@@ -469,6 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sharker.Tec.SpringOvertrue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -489,6 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sharker.Tec.SpringOvertrue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

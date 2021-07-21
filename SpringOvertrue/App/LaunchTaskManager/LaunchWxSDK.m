@@ -31,7 +31,6 @@ static  NSString *kAppWXUniversalLink = @"";
 
 - (void)run {
     [[SOWXApiManager defaultManager] setupWXSDKWithApp:kAppWXSDK universalLink:kAppWXUniversalLink];
-    
 }
 
 
