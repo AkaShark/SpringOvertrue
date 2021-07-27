@@ -4,7 +4,6 @@
 target 'SpringOvertrue' do
   use_frameworks!
   pod 'Masonry', '1.1.0'
-    pod 'AFNetworking', '3.2.1'
     pod 'JSONModel', '1.7.0'
     pod 'SDWebImage', '4.4.3'
     pod 'KVOController', '1.2.0'
@@ -23,9 +22,5 @@ target 'SpringOvertrue' do
     # pod 'Firebase/Crashlytics', '7.7.0'
     # pod 'Firebase/Analytics', '7.7.0'
     pod 'MGJRouter', '0.10.0'
-    
-    ## 本地DevPod
-    pod 'SOLoginModule', :path => './Lib/SOLoginModule'
-    pod 'SOUtiles', :path => './Lib/SOUtiles'
 
 end

@@ -17,12 +17,17 @@
 		968142CF26A07C9800207460 /* LaunchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142CE26A07C9800207460 /* LaunchManager.m */; };
 		968142D326A0A1BA00207460 /* LaunchWxSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142D226A0A1BA00207460 /* LaunchWxSDK.m */; };
 		968142D626A0A1DC00207460 /* LaunchRootVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142D526A0A1DC00207460 /* LaunchRootVc.m */; };
-		968142DE26A1B87C00207460 /* SOUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142DD26A1B87C00207460 /* SOUIUtils.m */; };
-		968142DF26A1BEFC00207460 /* SOUIUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 968142DC26A1B87C00207460 /* SOUIUtils.h */; };
-		968142E426A1C9D500207460 /* UIView+SOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142E326A1C9D500207460 /* UIView+SOUtil.m */; };
-		968142E726A1D20400207460 /* UIView+SOLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142E626A1D20400207460 /* UIView+SOLayout.m */; };
-		968142EB26A1DF9E00207460 /* SOBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 968142EA26A1DF9E00207460 /* SOBaseModel.m */; };
 		96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7AA269F408100024350 /* SOAppDelegate.m */; };
+		96ECF0E326B04DB100B8A0CD /* SOBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0D926B04DB100B8A0CD /* SOBaseModel.m */; };
+		96ECF0E426B04DB100B8A0CD /* SOUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0DC26B04DB100B8A0CD /* SOUIUtils.m */; };
+		96ECF0E526B04DB100B8A0CD /* UIView+SOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0E126B04DB100B8A0CD /* UIView+SOUtil.m */; };
+		96ECF0E626B04DB100B8A0CD /* UIView+SOLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0E226B04DB100B8A0CD /* UIView+SOLayout.m */; };
+		96ECF0F626B04DBB00B8A0CD /* SOLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */; };
+		96ECF0F726B04DBB00B8A0CD /* SOWXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0EC26B04DBB00B8A0CD /* SOWXApiManager.m */; };
+		96ECF0F826B04DBB00B8A0CD /* SOLoginCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0ED26B04DBB00B8A0CD /* SOLoginCom.m */; };
+		96ECF0F926B04DBB00B8A0CD /* SORegisterCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0EE26B04DBB00B8A0CD /* SORegisterCom.m */; };
+		96ECF0FA26B04DBB00B8A0CD /* SOLoginRegisterRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0F326B04DBB00B8A0CD /* SOLoginRegisterRespModel.m */; };
+		96ECF0FB26B04DBB00B8A0CD /* SOLoginRegisterReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0F426B04DBB00B8A0CD /* SOLoginRegisterReqModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,17 +48,29 @@
 		968142D226A0A1BA00207460 /* LaunchWxSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchWxSDK.m; sourceTree = "<group>"; };
 		968142D426A0A1DC00207460 /* LaunchRootVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchRootVc.h; sourceTree = "<group>"; };
 		968142D526A0A1DC00207460 /* LaunchRootVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchRootVc.m; sourceTree = "<group>"; };
-		968142DC26A1B87C00207460 /* SOUIUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = SOUIUtils.h; sourceTree = "<group>"; };
-		968142DD26A1B87C00207460 /* SOUIUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOUIUtils.m; sourceTree = "<group>"; };
 		968142E026A1C1EB00207460 /* SOPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOPrefixHeader.pch; sourceTree = "<group>"; };
-		968142E226A1C9D500207460 /* UIView+SOUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SOUtil.h"; sourceTree = "<group>"; };
-		968142E326A1C9D500207460 /* UIView+SOUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOUtil.m"; sourceTree = "<group>"; };
-		968142E526A1D20400207460 /* UIView+SOLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SOLayout.h"; sourceTree = "<group>"; };
-		968142E626A1D20400207460 /* UIView+SOLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOLayout.m"; sourceTree = "<group>"; };
-		968142E926A1DF9E00207460 /* SOBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOBaseModel.h; sourceTree = "<group>"; };
-		968142EA26A1DF9E00207460 /* SOBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOBaseModel.m; sourceTree = "<group>"; };
 		96A2F7A9269F408100024350 /* SOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
 		96A2F7AA269F408100024350 /* SOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
+		96ECF0D926B04DB100B8A0CD /* SOBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseModel.m; sourceTree = "<group>"; };
+		96ECF0DA26B04DB100B8A0CD /* SOBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseModel.h; sourceTree = "<group>"; };
+		96ECF0DC26B04DB100B8A0CD /* SOUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOUIUtils.m; sourceTree = "<group>"; };
+		96ECF0DD26B04DB100B8A0CD /* SOUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOUIUtils.h; sourceTree = "<group>"; };
+		96ECF0DF26B04DB100B8A0CD /* UIView+SOUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SOUtil.h"; sourceTree = "<group>"; };
+		96ECF0E026B04DB100B8A0CD /* UIView+SOLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SOLayout.h"; sourceTree = "<group>"; };
+		96ECF0E126B04DB100B8A0CD /* UIView+SOUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOUtil.m"; sourceTree = "<group>"; };
+		96ECF0E226B04DB100B8A0CD /* UIView+SOLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOLayout.m"; sourceTree = "<group>"; };
+		96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginRegisterViewController.m; sourceTree = "<group>"; };
+		96ECF0E926B04DBB00B8A0CD /* SOLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginRegisterViewController.h; sourceTree = "<group>"; };
+		96ECF0EB26B04DBB00B8A0CD /* SORegisterCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SORegisterCom.h; sourceTree = "<group>"; };
+		96ECF0EC26B04DBB00B8A0CD /* SOWXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOWXApiManager.m; sourceTree = "<group>"; };
+		96ECF0ED26B04DBB00B8A0CD /* SOLoginCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginCom.m; sourceTree = "<group>"; };
+		96ECF0EE26B04DBB00B8A0CD /* SORegisterCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SORegisterCom.m; sourceTree = "<group>"; };
+		96ECF0EF26B04DBB00B8A0CD /* SOWXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOWXApiManager.h; sourceTree = "<group>"; };
+		96ECF0F026B04DBB00B8A0CD /* SOLoginCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginCom.h; sourceTree = "<group>"; };
+		96ECF0F226B04DBB00B8A0CD /* SOLoginRegisterReqModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginRegisterReqModel.h; sourceTree = "<group>"; };
+		96ECF0F326B04DBB00B8A0CD /* SOLoginRegisterRespModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginRegisterRespModel.m; sourceTree = "<group>"; };
+		96ECF0F426B04DBB00B8A0CD /* SOLoginRegisterReqModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginRegisterReqModel.m; sourceTree = "<group>"; };
+		96ECF0F526B04DBB00B8A0CD /* SOLoginRegisterRespModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginRegisterRespModel.h; sourceTree = "<group>"; };
 		CF5EA8A67C3236AC66BA5931 /* Pods-SpringOvertrue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringOvertrue.debug.xcconfig"; path = "Target Support Files/Pods-SpringOvertrue/Pods-SpringOvertrue.debug.xcconfig"; sourceTree = "<group>"; };
 		FEC5E6CBBF7C425F7EF8E057 /* Pods-SpringOvertrue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringOvertrue.release.xcconfig"; path = "Target Support Files/Pods-SpringOvertrue/Pods-SpringOvertrue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +127,6 @@
 		967A7557269F270C000B762B /* SpringOvertrue */ = {
 			isa = PBXGroup;
 			children = (
-				968142E126A1C9B100207460 /* Category */,
 				96A2F7AC269F410600024350 /* App */,
 			);
 			path = SpringOvertrue;
@@ -132,57 +148,12 @@
 			path = LaunchTaskManager;
 			sourceTree = "<group>";
 		};
-		968142DB26A1B81900207460 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				968142ED26A1F41700207460 /* Network */,
-				968142EC26A1F40600207460 /* UI */,
-				968142E826A1DF8A00207460 /* Model */,
-				968142E026A1C1EB00207460 /* SOPrefixHeader.pch */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		968142E126A1C9B100207460 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				968142E226A1C9D500207460 /* UIView+SOUtil.h */,
-				968142E326A1C9D500207460 /* UIView+SOUtil.m */,
-				968142E526A1D20400207460 /* UIView+SOLayout.h */,
-				968142E626A1D20400207460 /* UIView+SOLayout.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		968142E826A1DF8A00207460 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				968142E926A1DF9E00207460 /* SOBaseModel.h */,
-				968142EA26A1DF9E00207460 /* SOBaseModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		968142EC26A1F40600207460 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				968142DC26A1B87C00207460 /* SOUIUtils.h */,
-				968142DD26A1B87C00207460 /* SOUIUtils.m */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		968142ED26A1F41700207460 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		96A2F7AC269F410600024350 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				968142DB26A1B81900207460 /* Utils */,
+				96ECF0D626B04D2F00B8A0CD /* SOUtiles */,
+				96ECF0D426B04D1300B8A0CD /* SOLoginModule */,
+				968142E026A1C1EB00207460 /* SOPrefixHeader.pch */,
 				968142C926A07C1E00207460 /* LaunchTaskManager */,
 				96A2F7A9269F408100024350 /* SOAppDelegate.h */,
 				96A2F7AA269F408100024350 /* SOAppDelegate.m */,
@@ -193,6 +164,96 @@
 				967A756A269F270E000B762B /* main.m */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		96ECF0D426B04D1300B8A0CD /* SOLoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0EA26B04DBB00B8A0CD /* Com */,
+				96ECF0F126B04DBB00B8A0CD /* Model */,
+				96ECF0E726B04DBB00B8A0CD /* VC */,
+			);
+			path = SOLoginModule;
+			sourceTree = "<group>";
+		};
+		96ECF0D626B04D2F00B8A0CD /* SOUtiles */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0DE26B04DB100B8A0CD /* Category */,
+				96ECF0D826B04DB100B8A0CD /* Model */,
+				96ECF0D726B04DB100B8A0CD /* Network */,
+				96ECF0DB26B04DB100B8A0CD /* UI */,
+			);
+			path = SOUtiles;
+			sourceTree = "<group>";
+		};
+		96ECF0D726B04DB100B8A0CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		96ECF0D826B04DB100B8A0CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0D926B04DB100B8A0CD /* SOBaseModel.m */,
+				96ECF0DA26B04DB100B8A0CD /* SOBaseModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96ECF0DB26B04DB100B8A0CD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0DC26B04DB100B8A0CD /* SOUIUtils.m */,
+				96ECF0DD26B04DB100B8A0CD /* SOUIUtils.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		96ECF0DE26B04DB100B8A0CD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0DF26B04DB100B8A0CD /* UIView+SOUtil.h */,
+				96ECF0E026B04DB100B8A0CD /* UIView+SOLayout.h */,
+				96ECF0E126B04DB100B8A0CD /* UIView+SOUtil.m */,
+				96ECF0E226B04DB100B8A0CD /* UIView+SOLayout.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		96ECF0E726B04DBB00B8A0CD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */,
+				96ECF0E926B04DBB00B8A0CD /* SOLoginRegisterViewController.h */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		96ECF0EA26B04DBB00B8A0CD /* Com */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0EB26B04DBB00B8A0CD /* SORegisterCom.h */,
+				96ECF0EC26B04DBB00B8A0CD /* SOWXApiManager.m */,
+				96ECF0ED26B04DBB00B8A0CD /* SOLoginCom.m */,
+				96ECF0EE26B04DBB00B8A0CD /* SORegisterCom.m */,
+				96ECF0EF26B04DBB00B8A0CD /* SOWXApiManager.h */,
+				96ECF0F026B04DBB00B8A0CD /* SOLoginCom.h */,
+			);
+			path = Com;
+			sourceTree = "<group>";
+		};
+		96ECF0F126B04DBB00B8A0CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96ECF0F226B04DBB00B8A0CD /* SOLoginRegisterReqModel.h */,
+				96ECF0F326B04DBB00B8A0CD /* SOLoginRegisterRespModel.m */,
+				96ECF0F426B04DBB00B8A0CD /* SOLoginRegisterReqModel.m */,
+				96ECF0F526B04DBB00B8A0CD /* SOLoginRegisterRespModel.h */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,16 +370,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				968142CF26A07C9800207460 /* LaunchManager.m in Sources */,
+				96ECF0F726B04DBB00B8A0CD /* SOWXApiManager.m in Sources */,
 				968142CC26A07C8400207460 /* LaunchTask.m in Sources */,
-				968142DF26A1BEFC00207460 /* SOUIUtils.h in Sources */,
+				96ECF0E326B04DB100B8A0CD /* SOBaseModel.m in Sources */,
 				96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */,
-				968142E726A1D20400207460 /* UIView+SOLayout.m in Sources */,
+				96ECF0E626B04DB100B8A0CD /* UIView+SOLayout.m in Sources */,
+				96ECF0F926B04DBB00B8A0CD /* SORegisterCom.m in Sources */,
 				968142D626A0A1DC00207460 /* LaunchRootVc.m in Sources */,
-				968142DE26A1B87C00207460 /* SOUIUtils.m in Sources */,
-				968142E426A1C9D500207460 /* UIView+SOUtil.m in Sources */,
 				967A756B269F270E000B762B /* main.m in Sources */,
-				968142EB26A1DF9E00207460 /* SOBaseModel.m in Sources */,
+				96ECF0E526B04DB100B8A0CD /* UIView+SOUtil.m in Sources */,
+				96ECF0F626B04DBB00B8A0CD /* SOLoginRegisterViewController.m in Sources */,
 				968142D326A0A1BA00207460 /* LaunchWxSDK.m in Sources */,
+				96ECF0F826B04DBB00B8A0CD /* SOLoginCom.m in Sources */,
+				96ECF0FB26B04DBB00B8A0CD /* SOLoginRegisterReqModel.m in Sources */,
+				96ECF0E426B04DB100B8A0CD /* SOUIUtils.m in Sources */,
+				96ECF0FA26B04DBB00B8A0CD /* SOLoginRegisterRespModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9T65B34B3;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SpringOvertrue/App/Utils/SOPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SpringOvertrue/App/SOPrefixHeader.pch";
 				INFOPLIST_FILE = SpringOvertrue/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,7 +551,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9T65B34B3;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SpringOvertrue/App/Utils/SOPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SpringOvertrue/App/SOPrefixHeader.pch";
 				INFOPLIST_FILE = SpringOvertrue/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
