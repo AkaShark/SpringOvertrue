@@ -7,7 +7,8 @@
 
 #import "LaunchWxSDK.h"
 #import "LaunchManager.h"
-#import <SOWXApiManager.h>
+#import "SOWXApiManager.h"
+
 static  NSString *kAppWXSDK = @"";
 static  NSString *kAppWXUniversalLink = @"";
 
