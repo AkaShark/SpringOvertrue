@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F93F0CF490634388703E583 /* Pods_SpringOvertrue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E81618896ED91C10B1650 /* Pods_SpringOvertrue.framework */; };
+		9675D0AF26B2EEA2000D06BA /* SOUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0AE26B2EEA2000D06BA /* SOUserManager.m */; };
 		967A7563269F270C000B762B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7561269F270C000B762B /* Main.storyboard */; };
 		967A7565269F270E000B762B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967A7564269F270E000B762B /* Assets.xcassets */; };
 		967A7568269F270E000B762B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7566269F270E000B762B /* LaunchScreen.storyboard */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		494E81618896ED91C10B1650 /* Pods_SpringOvertrue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringOvertrue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96619BD026A86B6800EA0F3B /* SOLoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SOLoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9675D0AD26B2EEA2000D06BA /* SOUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOUserManager.h; sourceTree = "<group>"; };
+		9675D0AE26B2EEA2000D06BA /* SOUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOUserManager.m; sourceTree = "<group>"; };
 		967A7555269F270C000B762B /* SpringOvertrue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringOvertrue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967A7562269F270C000B762B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		967A7564269F270E000B762B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +123,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9675D0AB26B2EE50000D06BA /* BaseCom */ = {
+			isa = PBXGroup;
+			children = (
+				9675D0AC26B2EE85000D06BA /* Com */,
+				96ECF0D826B04DB100B8A0CD /* Model */,
+			);
+			path = BaseCom;
+			sourceTree = "<group>";
+		};
+		9675D0AC26B2EE85000D06BA /* Com */ = {
+			isa = PBXGroup;
+			children = (
+				9675D0AD26B2EEA2000D06BA /* SOUserManager.h */,
+				9675D0AE26B2EEA2000D06BA /* SOUserManager.m */,
+			);
+			path = Com;
+			sourceTree = "<group>";
+		};
 		967A754C269F270C000B762B = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +195,7 @@
 		96A2F7AC269F410600024350 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				9675D0AB26B2EE50000D06BA /* BaseCom */,
 				96ECF0D726B04DB100B8A0CD /* Network */,
 				96ECF0D626B04D2F00B8A0CD /* SOUtiles */,
 				96ECF0D426B04D1300B8A0CD /* SOLoginModule */,
@@ -205,7 +227,6 @@
 			children = (
 				9681DCB626B1AE500062EAD3 /* App */,
 				96ECF0DE26B04DB100B8A0CD /* Category */,
-				96ECF0D826B04DB100B8A0CD /* Model */,
 				96ECF0DB26B04DB100B8A0CD /* UI */,
 			);
 			path = SOUtiles;
@@ -230,8 +251,8 @@
 		96ECF0D826B04DB100B8A0CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				96ECF0D926B04DB100B8A0CD /* SOBaseModel.m */,
 				96ECF0DA26B04DB100B8A0CD /* SOBaseModel.h */,
+				96ECF0D926B04DB100B8A0CD /* SOBaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9675D0AF26B2EEA2000D06BA /* SOUserManager.m in Sources */,
 				9681DCAF26B1A2220062EAD3 /* SOApiRoute.m in Sources */,
 				968142CF26A07C9800207460 /* LaunchManager.m in Sources */,
 				96ECF0F726B04DBB00B8A0CD /* SOWXApiManager.m in Sources */,

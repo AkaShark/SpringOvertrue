@@ -54,7 +54,7 @@ static SOAppInfo *_instance;
 - (NSString *)osVersion {
     return [[UIDevice currentDevice] systemVersion];
 }
-- (NSString *)phone_model {
+- (NSString *)phoneModel {
     return [UIDeviceHardware platformStringSimple];
 }
 

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, copy) NSString *appName;
 @property (nonatomic, readonly, copy) NSString *appVersion;
 @property (nonatomic, readonly, copy) NSString *osVersion;
-@property (nonatomic, readonly, copy) NSString *phone_model;
+@property (nonatomic, readonly, copy) NSString *phoneModel;
 @property (nonatomic, readonly, copy) NSString *channelID;
 @property (nonatomic, readonly, copy) NSString *terminalID;
 @property (nonatomic, readonly, copy) NSString *nonce;

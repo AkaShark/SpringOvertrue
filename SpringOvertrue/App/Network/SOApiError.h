@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL isNetworkError;
 @property (nonatomic, copy, readonly) NSDictionary *userInfo;
 
-+ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(NSString *)userHint;
++ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(NSString * _Nullable)userHint;
 
-+ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(NSString *)userHint userInfo:(NSDictionary * _Nullable )userInfo;
++ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(NSString * _Nullable)userHint userInfo:(NSDictionary * _Nullable )userInfo;
 
 
 @end
