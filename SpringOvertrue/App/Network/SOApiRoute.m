@@ -13,6 +13,6 @@
 // 根据传进来route切换domain
 + (NSString *)urlWithRoute:(NSString *)route {
 //    NSString *domain =
-    return [NSString stringWithFormat:@"%@%@", kDevelopURL, route];
+    return [NSString stringWithFormat:@"%@%@", kUrl, route];
 }
 @end

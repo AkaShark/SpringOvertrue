@@ -19,7 +19,7 @@ static char kSOLayoutSubViewsBlockKey;
 
 - (void)so_layoutSubviews {
     [self so_layoutSubviews]; // layoutSubviews
-    self.layoutSubviewsBlock?:self.layoutSubviewsBlock();
+    !self.layoutSubviewsBlock?:self.layoutSubviewsBlock();
 }
 
 #pragma mark - Accessors

@@ -19,11 +19,17 @@
 
 #define kReleaseURL @"https://www.coachview.cn/coachAI-backend/v2"
 #define kDevelopURL @"http://139.186.158.245:10708/spring-overture"
+// 根据条件取Url
+#ifdef DEBUG
+#define kUrl kDevelopURL
+#else
+#define kUrl kReleaseURL
+#endif
 
 
 #pragma mark - ApiError
 
 #define kApiUrlError @"10000"
-
+#define kApiDataFormat @"10001"
 
 #endif /* SONetworkMacro_h */

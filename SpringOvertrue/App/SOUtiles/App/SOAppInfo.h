@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SOAppInfo : NSObject
-+(instancetype)shareInstance;
++ (instancetype)shareInstance;
 @property (nonatomic, readonly, copy) NSString *appName;
 @property (nonatomic, readonly, copy) NSString *appVersion;
 @property (nonatomic, readonly, copy) NSString *osVersion;

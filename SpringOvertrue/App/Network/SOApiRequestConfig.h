@@ -6,13 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SOApiError.h"
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSUInteger, SOApiErrorHintType) {
-    SOApiErrorHintNoneType = 0,
-    SOApiErrorHintToastType,
-    SOApiErrorHintAlertType,
-};
 
 @interface SOApiRequestConfig : NSObject
 
@@ -21,6 +17,8 @@ typedef NS_ENUM(NSUInteger, SOApiErrorHintType) {
 @property (nonatomic, strong) NSMutableDictionary *params;
 @property (nonatomic, assign) SOApiErrorHintType hintType;
 @property (nonatomic, strong) NSNumber *timeoutInterval;
+@property (nonatomic, assign) BOOL waitsForConnectivity; /// 是否等待网络好了再去连接
+@property (nonatomic, assign) BOOL timeoutIntervalForResource; /// 是否设置超时连接 与上面的属性搭配使用
 
 @end
 

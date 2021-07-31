@@ -6,7 +6,7 @@
 //
 
 #import "SOLoginRegisterViewController.h"
-
+#import "SOLoginCom.h"
 @interface SOLoginRegisterViewController ()
 
 @end
@@ -15,6 +15,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor redColor];
+}
+
+- (void)configOperationCom {
+    [super configOperationCom];
+    self.operationCom = [[SOLoginCom alloc] init];
+
+}
+
+- (void)requestContentData {
+    [super requestContentData];
+    
+    
 }
 
 

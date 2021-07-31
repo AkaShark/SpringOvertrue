@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1F93F0CF490634388703E583 /* Pods_SpringOvertrue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E81618896ED91C10B1650 /* Pods_SpringOvertrue.framework */; };
 		9675D0AF26B2EEA2000D06BA /* SOUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0AE26B2EEA2000D06BA /* SOUserManager.m */; };
+		9675D0B326B59412000D06BA /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0B226B59412000D06BA /* SOBaseViewController.m */; };
+		9675D0B926B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9675D0B826B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist */; };
+		9675D0BD26B5AAEF000D06BA /* SOBaseCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0BC26B5AAEF000D06BA /* SOBaseCom.m */; };
 		967A7563269F270C000B762B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7561269F270C000B762B /* Main.storyboard */; };
 		967A7565269F270E000B762B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967A7564269F270E000B762B /* Assets.xcassets */; };
 		967A7568269F270E000B762B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7566269F270E000B762B /* LaunchScreen.storyboard */; };
@@ -30,7 +33,6 @@
 		96ECF0F626B04DBB00B8A0CD /* SOLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */; };
 		96ECF0F726B04DBB00B8A0CD /* SOWXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0EC26B04DBB00B8A0CD /* SOWXApiManager.m */; };
 		96ECF0F826B04DBB00B8A0CD /* SOLoginCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0ED26B04DBB00B8A0CD /* SOLoginCom.m */; };
-		96ECF0F926B04DBB00B8A0CD /* SORegisterCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0EE26B04DBB00B8A0CD /* SORegisterCom.m */; };
 		96ECF0FA26B04DBB00B8A0CD /* SOLoginRegisterRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0F326B04DBB00B8A0CD /* SOLoginRegisterRespModel.m */; };
 		96ECF0FB26B04DBB00B8A0CD /* SOLoginRegisterReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0F426B04DBB00B8A0CD /* SOLoginRegisterReqModel.m */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,11 @@
 		96619BD026A86B6800EA0F3B /* SOLoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SOLoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9675D0AD26B2EEA2000D06BA /* SOUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOUserManager.h; sourceTree = "<group>"; };
 		9675D0AE26B2EEA2000D06BA /* SOUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOUserManager.m; sourceTree = "<group>"; };
+		9675D0B126B59412000D06BA /* SOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOBaseViewController.h; sourceTree = "<group>"; };
+		9675D0B226B59412000D06BA /* SOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOBaseViewController.m; sourceTree = "<group>"; };
+		9675D0B826B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SOLaunchTaskRegisterTable.plist; sourceTree = "<group>"; };
+		9675D0BB26B5AAEF000D06BA /* SOBaseCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOBaseCom.h; sourceTree = "<group>"; };
+		9675D0BC26B5AAEF000D06BA /* SOBaseCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOBaseCom.m; sourceTree = "<group>"; };
 		967A7555269F270C000B762B /* SpringOvertrue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringOvertrue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967A7562269F270C000B762B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		967A7564269F270E000B762B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,10 +86,8 @@
 		96ECF0E226B04DB100B8A0CD /* UIView+SOLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOLayout.m"; sourceTree = "<group>"; };
 		96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginRegisterViewController.m; sourceTree = "<group>"; };
 		96ECF0E926B04DBB00B8A0CD /* SOLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginRegisterViewController.h; sourceTree = "<group>"; };
-		96ECF0EB26B04DBB00B8A0CD /* SORegisterCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SORegisterCom.h; sourceTree = "<group>"; };
 		96ECF0EC26B04DBB00B8A0CD /* SOWXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOWXApiManager.m; sourceTree = "<group>"; };
 		96ECF0ED26B04DBB00B8A0CD /* SOLoginCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginCom.m; sourceTree = "<group>"; };
-		96ECF0EE26B04DBB00B8A0CD /* SORegisterCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SORegisterCom.m; sourceTree = "<group>"; };
 		96ECF0EF26B04DBB00B8A0CD /* SOWXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOWXApiManager.h; sourceTree = "<group>"; };
 		96ECF0F026B04DBB00B8A0CD /* SOLoginCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginCom.h; sourceTree = "<group>"; };
 		96ECF0F226B04DBB00B8A0CD /* SOLoginRegisterReqModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginRegisterReqModel.h; sourceTree = "<group>"; };
@@ -126,6 +131,7 @@
 		9675D0AB26B2EE50000D06BA /* BaseCom */ = {
 			isa = PBXGroup;
 			children = (
+				9675D0B026B59403000D06BA /* VC */,
 				9675D0AC26B2EE85000D06BA /* Com */,
 				96ECF0D826B04DB100B8A0CD /* Model */,
 			);
@@ -135,10 +141,37 @@
 		9675D0AC26B2EE85000D06BA /* Com */ = {
 			isa = PBXGroup;
 			children = (
+				9675D0BB26B5AAEF000D06BA /* SOBaseCom.h */,
+				9675D0BC26B5AAEF000D06BA /* SOBaseCom.m */,
+			);
+			path = Com;
+			sourceTree = "<group>";
+		};
+		9675D0B026B59403000D06BA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9675D0B126B59412000D06BA /* SOBaseViewController.h */,
+				9675D0B226B59412000D06BA /* SOBaseViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9675D0B726B59706000D06BA /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				9675D0BA26B5AABE000D06BA /* SOUserModule */,
+				96ECF0D426B04D1300B8A0CD /* SOLoginModule */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		9675D0BA26B5AABE000D06BA /* SOUserModule */ = {
+			isa = PBXGroup;
+			children = (
 				9675D0AD26B2EEA2000D06BA /* SOUserManager.h */,
 				9675D0AE26B2EEA2000D06BA /* SOUserManager.m */,
 			);
-			path = Com;
+			path = SOUserModule;
 			sourceTree = "<group>";
 		};
 		967A754C269F270C000B762B = {
@@ -179,6 +212,7 @@
 				968142D226A0A1BA00207460 /* LaunchWxSDK.m */,
 				968142D426A0A1DC00207460 /* LaunchRootVc.h */,
 				968142D526A0A1DC00207460 /* LaunchRootVc.m */,
+				9675D0B826B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist */,
 			);
 			path = LaunchTaskManager;
 			sourceTree = "<group>";
@@ -198,8 +232,8 @@
 				9675D0AB26B2EE50000D06BA /* BaseCom */,
 				96ECF0D726B04DB100B8A0CD /* Network */,
 				96ECF0D626B04D2F00B8A0CD /* SOUtiles */,
-				96ECF0D426B04D1300B8A0CD /* SOLoginModule */,
 				968142C926A07C1E00207460 /* LaunchTaskManager */,
+				9675D0B726B59706000D06BA /* Business */,
 				96A2F7A9269F408100024350 /* SOAppDelegate.h */,
 				96A2F7AA269F408100024350 /* SOAppDelegate.m */,
 				967A7561269F270C000B762B /* Main.storyboard */,
@@ -280,8 +314,8 @@
 		96ECF0E726B04DBB00B8A0CD /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */,
 				96ECF0E926B04DBB00B8A0CD /* SOLoginRegisterViewController.h */,
+				96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -289,12 +323,10 @@
 		96ECF0EA26B04DBB00B8A0CD /* Com */ = {
 			isa = PBXGroup;
 			children = (
-				96ECF0EB26B04DBB00B8A0CD /* SORegisterCom.h */,
-				96ECF0EC26B04DBB00B8A0CD /* SOWXApiManager.m */,
-				96ECF0ED26B04DBB00B8A0CD /* SOLoginCom.m */,
-				96ECF0EE26B04DBB00B8A0CD /* SORegisterCom.m */,
 				96ECF0EF26B04DBB00B8A0CD /* SOWXApiManager.h */,
+				96ECF0EC26B04DBB00B8A0CD /* SOWXApiManager.m */,
 				96ECF0F026B04DBB00B8A0CD /* SOLoginCom.h */,
+				96ECF0ED26B04DBB00B8A0CD /* SOLoginCom.m */,
 			);
 			path = Com;
 			sourceTree = "<group>";
@@ -370,6 +402,7 @@
 			files = (
 				967A7568269F270E000B762B /* LaunchScreen.storyboard in Resources */,
 				967A7565269F270E000B762B /* Assets.xcassets in Resources */,
+				9675D0B926B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist in Resources */,
 				967A7563269F270C000B762B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,12 +466,13 @@
 				96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */,
 				96ECF0E626B04DB100B8A0CD /* UIView+SOLayout.m in Sources */,
 				9681DCAB26B197020062EAD3 /* SOApiError.m in Sources */,
-				96ECF0F926B04DBB00B8A0CD /* SORegisterCom.m in Sources */,
 				968142D626A0A1DC00207460 /* LaunchRootVc.m in Sources */,
 				967A756B269F270E000B762B /* main.m in Sources */,
 				9681DCB526B1A26B0062EAD3 /* SOApiRequestClient.m in Sources */,
 				96ECF0E526B04DB100B8A0CD /* UIView+SOUtil.m in Sources */,
 				96ECF0F626B04DBB00B8A0CD /* SOLoginRegisterViewController.m in Sources */,
+				9675D0B326B59412000D06BA /* SOBaseViewController.m in Sources */,
+				9675D0BD26B5AAEF000D06BA /* SOBaseCom.m in Sources */,
 				968142D326A0A1BA00207460 /* LaunchWxSDK.m in Sources */,
 				96ECF0F826B04DBB00B8A0CD /* SOLoginCom.m in Sources */,
 				96ECF0FB26B04DBB00B8A0CD /* SOLoginRegisterReqModel.m in Sources */,

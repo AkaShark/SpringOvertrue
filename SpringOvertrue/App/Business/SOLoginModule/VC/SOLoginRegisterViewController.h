@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SOLoginRegisterViewController : UIViewController
+@interface SOLoginRegisterViewController : SOBaseViewController
 
 @end
 

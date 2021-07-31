@@ -10,7 +10,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class SOLoginRegisterReqModel;
 @class SOLoginRegisterRespModel;
 
-@interface SOLoginCom : NSObject
+@interface SOLoginCom : SOBaseCom
+@property (nonatomic, copy) dispatch_block_t loginSuccessHandle;
+@property (nonatomic, copy) dispatch_block_t logoutSuccessHandle;
 
 - (void)requestSMSCode:(SOLoginRegisterReqModel *)reqModel completion:(void(^)(SOLoginRegisterRespModel * respModel))completion;
 
@@ -18,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)verifySMSCode:(SOLoginRegisterReqModel *)reqModel completion:(void(^)(SOLoginRegisterRespModel *respModel))completion;
 
-- (void)loginSuccess;
 
 
 @end

@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol LaunchManagerProtocol <NSObject>
 - (void)addTask:(LaunchTask *)task;
 - (void)removeTask:(LaunchTask *)task;
+- (void)runLaunchTasks;
 @end
 
 NS_ASSUME_NONNULL_END

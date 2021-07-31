@@ -10,10 +10,20 @@
 NS_ASSUME_NONNULL_BEGIN
 @class SOApiRequestConfig;
 @class SOApiError;
+
+typedef NS_ENUM(NSUInteger, SORequestType) {
+    SORequestUnknowType = 0,
+    SORequestUnGetType,
+    SORequestUnPostType,
+    SORequestUnPutType,
+    SORequestUnDeleteType,
+};
+
 @interface SOApiRequestClient : NSObject
 
 + (NSURLSessionDataTask *)so_makeRequest:(void(^)(SOApiRequestConfig *config))configBlock
-                              completion:(void(^)(id _Nullable responseObject, SOApiError *error))completion;
+                             requestType:(SORequestType)type
+                              completion:(void(^)(id _Nullable responseObject, SOApiError * _Nullable error))completion;
 @end
 
 NS_ASSUME_NONNULL_END
