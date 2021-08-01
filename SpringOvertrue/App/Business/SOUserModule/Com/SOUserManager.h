@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger, SOUserStatus) {
 
 @interface SOUserManager : NSObject
 
-+(instancetype)shareManager;
++ (instancetype)shareManager;
 
 - (NSString *)currentUserToken;
 

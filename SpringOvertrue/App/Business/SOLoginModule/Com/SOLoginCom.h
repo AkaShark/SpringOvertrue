@@ -14,11 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) dispatch_block_t loginSuccessHandle;
 @property (nonatomic, copy) dispatch_block_t logoutSuccessHandle;
 
-- (void)requestSMSCode:(SOLoginRegisterReqModel *)reqModel completion:(void(^)(SOLoginRegisterRespModel * respModel))completion;
+- (void)requestSMSCodeWithPhoneNum:(NSString *)number completion:(void(^)(SOLoginRegisterRespModel *respModel))completion;
 
 - (void)showSMSCodeView;
 
-- (void)verifySMSCode:(SOLoginRegisterReqModel *)reqModel completion:(void(^)(SOLoginRegisterRespModel *respModel))completion;
+- (void)verifySMSCodePhoneNum:(NSString *)number SMSCode:(NSString *)code completion:(void(^)(SOLoginRegisterRespModel *respModel))completion;
 
 
 

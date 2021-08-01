@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SOBaseViewController : UIViewController
-@property (nonatomic, strong) SOBaseCom *operationCom;
 - (void)configOperationCom;
 - (void)requestContentData;
 - (void)setupContentUI;

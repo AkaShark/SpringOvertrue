@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SOLoginRegisterRespModel : NSObject
+@interface SOLoginRegisterRespModel : SOBaseModel
 
 @end
 

@@ -9,16 +9,17 @@
 @interface SOApiError ()
 @property (nonatomic, copy) NSString *statusCode;
 @property (nonatomic, copy) NSString *errorMessage;
-@property (nonatomic, assign) SOApiErrorHintType userHint;
+@property (nonatomic, copy) NSString *userHint;
 @property (nonatomic, assign) BOOL isNetworkError;
 @property (nonatomic, copy) NSDictionary *userInfo;
 @end
 
 @implementation SOApiError
-+ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(SOApiErrorHintType)userHint {
++ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(NSString *)userHint {
     return [SOApiError errorWithCode:statusCode message:errorMessage userHint:userHint userInfo:nil];
 }
-+ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(SOApiErrorHintType)userHint userInfo:(NSDictionary *)userInfo {
+
++ (SOApiError *)errorWithCode:(NSString *)statusCode message:(NSString *)errorMessage userHint:(NSString *)userHint userInfo:(NSDictionary *)userInfo {
     SOApiError *error = [[SOApiError alloc] init];
     error.statusCode = statusCode;
     error.errorMessage = errorMessage;

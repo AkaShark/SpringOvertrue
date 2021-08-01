@@ -12,6 +12,11 @@
 		9675D0B326B59412000D06BA /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0B226B59412000D06BA /* SOBaseViewController.m */; };
 		9675D0B926B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9675D0B826B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist */; };
 		9675D0BD26B5AAEF000D06BA /* SOBaseCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0BC26B5AAEF000D06BA /* SOBaseCom.m */; };
+		9675D0C526B6428A000D06BA /* SOBusinessRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0C326B6428A000D06BA /* SOBusinessRequest.m */; };
+		9675D0CB26B6FE16000D06BA /* SOUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0CA26B6FE16000D06BA /* SOUserModel.m */; };
+		9675D0CE26B700FB000D06BA /* SOAdressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0CD26B700FB000D06BA /* SOAdressModel.m */; };
+		9675D0D126B7015F000D06BA /* SOUserEduModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0D026B7015F000D06BA /* SOUserEduModel.m */; };
+		9675D0D426B70192000D06BA /* SOUserConstellation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675D0D326B70192000D06BA /* SOUserConstellation.m */; };
 		967A7563269F270C000B762B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7561269F270C000B762B /* Main.storyboard */; };
 		967A7565269F270E000B762B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967A7564269F270E000B762B /* Assets.xcassets */; };
 		967A7568269F270E000B762B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967A7566269F270E000B762B /* LaunchScreen.storyboard */; };
@@ -47,6 +52,17 @@
 		9675D0B826B5A6BB000D06BA /* SOLaunchTaskRegisterTable.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SOLaunchTaskRegisterTable.plist; sourceTree = "<group>"; };
 		9675D0BB26B5AAEF000D06BA /* SOBaseCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOBaseCom.h; sourceTree = "<group>"; };
 		9675D0BC26B5AAEF000D06BA /* SOBaseCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOBaseCom.m; sourceTree = "<group>"; };
+		9675D0C326B6428A000D06BA /* SOBusinessRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBusinessRequest.m; sourceTree = "<group>"; };
+		9675D0C426B6428A000D06BA /* SOBusinessRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBusinessRequest.h; sourceTree = "<group>"; };
+		9675D0C626B642A2000D06BA /* SOBusinessApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOBusinessApi.h; sourceTree = "<group>"; };
+		9675D0C926B6FE16000D06BA /* SOUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOUserModel.h; sourceTree = "<group>"; };
+		9675D0CA26B6FE16000D06BA /* SOUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOUserModel.m; sourceTree = "<group>"; };
+		9675D0CC26B700FB000D06BA /* SOAdressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOAdressModel.h; sourceTree = "<group>"; };
+		9675D0CD26B700FB000D06BA /* SOAdressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAdressModel.m; sourceTree = "<group>"; };
+		9675D0CF26B7015F000D06BA /* SOUserEduModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOUserEduModel.h; sourceTree = "<group>"; };
+		9675D0D026B7015F000D06BA /* SOUserEduModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOUserEduModel.m; sourceTree = "<group>"; };
+		9675D0D226B70192000D06BA /* SOUserConstellation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOUserConstellation.h; sourceTree = "<group>"; };
+		9675D0D326B70192000D06BA /* SOUserConstellation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOUserConstellation.m; sourceTree = "<group>"; };
 		967A7555269F270C000B762B /* SpringOvertrue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringOvertrue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967A7562269F270C000B762B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		967A7564269F270E000B762B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +175,7 @@
 		9675D0B726B59706000D06BA /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				9675D0C226B6428A000D06BA /* SOBusinessRequestModule */,
 				9675D0BA26B5AABE000D06BA /* SOUserModule */,
 				96ECF0D426B04D1300B8A0CD /* SOLoginModule */,
 			);
@@ -168,10 +185,44 @@
 		9675D0BA26B5AABE000D06BA /* SOUserModule */ = {
 			isa = PBXGroup;
 			children = (
+				9675D0C826B659AF000D06BA /* Model */,
+				9675D0C726B659A3000D06BA /* Com */,
+			);
+			path = SOUserModule;
+			sourceTree = "<group>";
+		};
+		9675D0C226B6428A000D06BA /* SOBusinessRequestModule */ = {
+			isa = PBXGroup;
+			children = (
+				9675D0C426B6428A000D06BA /* SOBusinessRequest.h */,
+				9675D0C326B6428A000D06BA /* SOBusinessRequest.m */,
+				9675D0C626B642A2000D06BA /* SOBusinessApi.h */,
+			);
+			path = SOBusinessRequestModule;
+			sourceTree = "<group>";
+		};
+		9675D0C726B659A3000D06BA /* Com */ = {
+			isa = PBXGroup;
+			children = (
 				9675D0AD26B2EEA2000D06BA /* SOUserManager.h */,
 				9675D0AE26B2EEA2000D06BA /* SOUserManager.m */,
 			);
-			path = SOUserModule;
+			path = Com;
+			sourceTree = "<group>";
+		};
+		9675D0C826B659AF000D06BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9675D0C926B6FE16000D06BA /* SOUserModel.h */,
+				9675D0CA26B6FE16000D06BA /* SOUserModel.m */,
+				9675D0CC26B700FB000D06BA /* SOAdressModel.h */,
+				9675D0CD26B700FB000D06BA /* SOAdressModel.m */,
+				9675D0CF26B7015F000D06BA /* SOUserEduModel.h */,
+				9675D0D026B7015F000D06BA /* SOUserEduModel.m */,
+				9675D0D226B70192000D06BA /* SOUserConstellation.h */,
+				9675D0D326B70192000D06BA /* SOUserConstellation.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		967A754C269F270C000B762B = {
@@ -314,8 +365,8 @@
 		96ECF0E726B04DBB00B8A0CD /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				96ECF0E926B04DBB00B8A0CD /* SOLoginRegisterViewController.h */,
 				96ECF0E826B04DBB00B8A0CD /* SOLoginRegisterViewController.m */,
+				96ECF0E926B04DBB00B8A0CD /* SOLoginRegisterViewController.h */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -460,7 +511,11 @@
 				9681DCAF26B1A2220062EAD3 /* SOApiRoute.m in Sources */,
 				968142CF26A07C9800207460 /* LaunchManager.m in Sources */,
 				96ECF0F726B04DBB00B8A0CD /* SOWXApiManager.m in Sources */,
+				9675D0D126B7015F000D06BA /* SOUserEduModel.m in Sources */,
 				968142CC26A07C8400207460 /* LaunchTask.m in Sources */,
+				9675D0C526B6428A000D06BA /* SOBusinessRequest.m in Sources */,
+				9675D0CB26B6FE16000D06BA /* SOUserModel.m in Sources */,
+				9675D0D426B70192000D06BA /* SOUserConstellation.m in Sources */,
 				96ECF0E326B04DB100B8A0CD /* SOBaseModel.m in Sources */,
 				9681DCB926B1AE600062EAD3 /* SOAppInfo.m in Sources */,
 				96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */,
@@ -479,6 +534,7 @@
 				96ECF0E426B04DB100B8A0CD /* SOUIUtils.m in Sources */,
 				96ECF0FA26B04DBB00B8A0CD /* SOLoginRegisterRespModel.m in Sources */,
 				9681DCB226B1A24E0062EAD3 /* SOApiRequestConfig.m in Sources */,
+				9675D0CE26B700FB000D06BA /* SOAdressModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

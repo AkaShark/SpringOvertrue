@@ -18,11 +18,11 @@
     SOApiRequestConfig *config = [[SOApiRequestConfig alloc] init];
     [SOApiRequestClient setRequestConfigWith:config configBlock:configBlock];
     
-    SOApiError *error = nil;
     if (config.url.length == 0 && config.route.length == 0) {
         // url error
-        error = [SOApiError errorWithCode:kApiUrlError message:@"url错误" userHint:config.hintType];
-        !completion?:completion(nil, error);
+        SOApiError *apiError = [SOApiError errorWithCode:kApiUrlError message:@"url错误" userHint:nil];
+        [self handleRequesrError:apiError userHintType:config.hintType];
+        !completion?:completion(nil, apiError);
         return nil;
     }
     
@@ -50,7 +50,8 @@
     }
     NSURLSessionDataTask *dataTask = [sessionManager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         if (error) {
-            SOApiError *apiError = [SOApiError errorWithCode:[@(error.code) stringValue] message:error.description userHint:config.hintType];
+            SOApiError *apiError = [SOApiError errorWithCode:[@(error.code) stringValue] message:error.description userHint:nil];
+            [self handleRequesrError:apiError userHintType:config.hintType];
             !completion?:completion(nil, apiError);
             return;
         }
@@ -58,8 +59,8 @@
         NSError *dataAnalysisError;
         SOApiError *apiError = [[SOApiError alloc] initWithDictionary:responseObject error:&dataAnalysisError];
         if (dataAnalysisError) {
-            apiError = [SOApiError errorWithCode:kApiDataFormat message:@"数据格式错误" userHint:config.hintType];
-            [self handleRequesrError:apiError];
+            apiError = [SOApiError errorWithCode:kApiDataFormat message:@"数据格式错误" userHint:nil];
+            [self handleRequesrError:apiError userHintType:config.hintType];
             !completion?:completion(nil, apiError);
             return;
         }
@@ -93,10 +94,35 @@
 
 + (void)setRequestConfigWith:(SOApiRequestConfig *)config
                  configBlock:(void (^)(SOApiRequestConfig * _Nonnull))configBlock {
+    NSDictionary *oldDic = [NSDictionary dictionaryWithDictionary:config.params];
+    if (configBlock) {
+        configBlock(config);
+    }
+    NSMutableDictionary *newConfigParams = [NSMutableDictionary dictionaryWithDictionary:config.params];
+    [newConfigParams enumerateKeysAndObjectsWithOptions:NSEnumerationReverse usingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        NSString *objStr = [NSString stringWithFormat:@"%@", obj];
+        if (![objStr length]) {
+            [newConfigParams removeObjectForKey:key];
+        }
+    }];
+    NSDictionary *newDic = [NSDictionary dictionaryWithDictionary:newConfigParams];
+    NSMutableDictionary *changeDic = [NSMutableDictionary dictionaryWithDictionary:[SOApiRequestClient compareChangeWithOldDic:oldDic newDic:newDic ignoreKeys:@[@"nonce"]]];
+    __unused NSString *sign = [SOApiRequestClient signWithParams:changeDic];
+//    config.params[@"sign"] = sign;
 }
 
-+ (void)handleRequesrError:(SOApiError *)error {
++ (void)handleRequesrError:(SOApiError *)error userHintType:(SOApiErrorHintType)hintType {
     
+}
+
+/// 判断新增的参数
++ (NSDictionary *)compareChangeWithOldDic:(NSDictionary *)old newDic:(NSDictionary *)new ignoreKeys:(NSArray *)ignoreKeys {
+    return @{};
+}
+
+/// md5签名
++ (NSString *)signWithParams:(NSDictionary *)params {
+    return  @"";
 }
 
 @end
