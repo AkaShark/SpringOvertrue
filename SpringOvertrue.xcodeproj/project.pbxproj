@@ -31,6 +31,7 @@
 		9681DCB526B1A26B0062EAD3 /* SOApiRequestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9681DCB426B1A26B0062EAD3 /* SOApiRequestClient.m */; };
 		9681DCB926B1AE600062EAD3 /* SOAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9681DCB826B1AE600062EAD3 /* SOAppInfo.m */; };
 		96A2F7AB269F408100024350 /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7AA269F408100024350 /* SOAppDelegate.m */; };
+		96DD23A726B98C4700896C9C /* SOMutualInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DD23A626B98C4700896C9C /* SOMutualInfo.m */; };
 		96ECF0E326B04DB100B8A0CD /* SOBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0D926B04DB100B8A0CD /* SOBaseModel.m */; };
 		96ECF0E426B04DB100B8A0CD /* SOUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0DC26B04DB100B8A0CD /* SOUIUtils.m */; };
 		96ECF0E526B04DB100B8A0CD /* UIView+SOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECF0E126B04DB100B8A0CD /* UIView+SOUtil.m */; };
@@ -92,6 +93,8 @@
 		9681DCB826B1AE600062EAD3 /* SOAppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAppInfo.m; sourceTree = "<group>"; };
 		96A2F7A9269F408100024350 /* SOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
 		96A2F7AA269F408100024350 /* SOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
+		96DD23A526B98C4700896C9C /* SOMutualInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOMutualInfo.h; sourceTree = "<group>"; };
+		96DD23A626B98C4700896C9C /* SOMutualInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOMutualInfo.m; sourceTree = "<group>"; };
 		96ECF0D926B04DB100B8A0CD /* SOBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseModel.m; sourceTree = "<group>"; };
 		96ECF0DA26B04DB100B8A0CD /* SOBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseModel.h; sourceTree = "<group>"; };
 		96ECF0DC26B04DB100B8A0CD /* SOUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOUIUtils.m; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 				9675D0D026B7015F000D06BA /* SOUserEduModel.m */,
 				9675D0D226B70192000D06BA /* SOUserConstellation.h */,
 				9675D0D326B70192000D06BA /* SOUserConstellation.m */,
+				96DD23A526B98C4700896C9C /* SOMutualInfo.h */,
+				96DD23A626B98C4700896C9C /* SOMutualInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -511,6 +516,7 @@
 				9681DCAF26B1A2220062EAD3 /* SOApiRoute.m in Sources */,
 				968142CF26A07C9800207460 /* LaunchManager.m in Sources */,
 				96ECF0F726B04DBB00B8A0CD /* SOWXApiManager.m in Sources */,
+				96DD23A726B98C4700896C9C /* SOMutualInfo.m in Sources */,
 				9675D0D126B7015F000D06BA /* SOUserEduModel.m in Sources */,
 				968142CC26A07C8400207460 /* LaunchTask.m in Sources */,
 				9675D0C526B6428A000D06BA /* SOBusinessRequest.m in Sources */,

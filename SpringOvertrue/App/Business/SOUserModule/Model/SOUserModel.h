@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, SOUserGender) {
     SOUserUnknowGender,
     
 };
-@class SOAdressModel, SOUserEduModel, SOUserConstellation;
+@class SOAdressModel, SOUserEduModel, SOUserConstellation, SOMutualInfo;
 @interface SOUserModel : SOBaseModel
 @property (nonatomic, strong) NSNumber *userId;
 @property (nonatomic, copy) NSString *nickName;
@@ -30,6 +30,10 @@ typedef NS_ENUM(NSUInteger, SOUserGender) {
 @property (nonatomic, copy) NSString *signature;
 @property (nonatomic, strong) SOUserEduModel *userEducation;
 @property (nonatomic, strong) SOUserConstellation *constellation;
+@property (nonatomic, strong) SOMutualInfo *mutualInfo;
+@property (nonatomic, strong) NSNumber *totalFansCount;
+@property (nonatomic, strong) NSNumber *unReadFansCount;
+@property (nonatomic, strong) NSNumber *followUserCount;
 @end
 
 NS_ASSUME_NONNULL_END
